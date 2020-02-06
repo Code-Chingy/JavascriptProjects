@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Profile Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico/download.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login102">
+			<div class="wrap-login102">
+				<form class="login100-form validate-form">
+						
+					<!-- <img src="images/icons/download.png" style="ime-mode: active; width: 88px;height: 88px;"> -->
+					<div >
+					<span class="login100-form-title p-b-16">
+						<span style="font-size:90%;">
+							<span style="font-family:'Times New Roman', Times, serif;">
+						<h2 style="font-family:'Courier New', Courier, monospace;text-align:center;font-size:40px ;color:midnightblue">
+						PROFILE</h2></span>
+                        </span>
+                        <style>
+								.img-container {
+								  text-align: center;
+								}
+							  </style>
+							  <div class="img-container"> <!-- Block parent element -->
+								<img src="images/icons/default_profile_photo.png" alt="Nana Kay" style="width: 220px;height:220px;">
+                              </div>
+                              <br>
+                              
+                              <div style="background-color:rgb(252, 253, 253); color:rgb(8, 8, 8); padding:1px;">
+                                    <span class="login1000-form-title p-b-100">
+                                            <p style="text-align: left;font-size: 25px;font-family: 'Courier New';padding-left: 8px;"><strong>NAME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <% let name = student.firstname + " " + student.lastname  %><%= name %></strong></p>
+                                        </span>
+						
+                    </div>
+                    <div style="background-color:rgb(213, 226, 241); color:rgb(8, 8, 8); padding:1px;">
+                            <span class="login1000-form-title p-b-100">
+                                    <p style="text-align: left;font-size: 25px;font-family: 'Courier New';padding-left: 8px;"><strong>ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= student.id %></strong></p>
+                                </span>
+                                </div>
+                                <div style="background-color:rgb(252, 253, 253); color:rgb(8, 8, 8); padding:1px;">
+                                    <span class="login1000-form-title p-b-100">
+                                            <p style="text-align: left;font-size: 25px;font-family: 'Courier New';padding-left: 8px;"><strong>GENDER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= student.gender %></strong></p>
+                                        </span>
+                                    </div>
+                                    <div style="background-color:rgb(213, 226, 241); color:rgb(8, 8, 8); padding:1px;">
+                                            <span class="login1000-form-title p-b-100">
+                                                    <p style="text-align: left;font-size: 25px;font-family: 'Courier New';padding-left: 8px;"><strong>DOB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= student.dob %></strong></p>
+                                                </span>
+                                                </div>
+                                                <div style="background-color:rgb(252, 253, 253); color:rgb(8, 8, 8); padding:1px;">
+                                                        <span class="login1000-form-title p-b-100">
+                                                                <p style="text-align: left;font-size: 25px;font-family: 'Courier New';padding-left: 8px;"><strong>COURSE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= student.course %></strong></p>
+                                                            </span>
+                                                        </div>
+                                               
+                                                        <div style="background-color:rgb(213, 226, 241); color:rgb(8, 8, 8); padding:1px;">
+                                                                <span class="login1000-form-title p-b-100">
+                                                                        <p style="text-align: left;font-size: 25px;font-family: 'Courier New';padding-left: 8px;"><strong>DEPARTMENT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= student.department %></strong></p>
+                                                                    </span>
+                                                                    </div>
+                                                                    <div style="background-color:rgb(252, 253, 253); color:rgb(8, 8, 8); padding:1px;">
+                                                                            <span class="login1000-form-title p-b-100">
+                                                                                    <p style="text-align: left;font-size: 25px;font-family: 'Courier New';padding-left: 8px;"><strong>LEVEL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= student.level %></strong></p>
+                                                                                </span>
+                                                                            </div>
+                                                                    
+                                                                            <div style="background-color:rgb(213, 226, 241); color:rgb(8, 8, 8); padding:70px;padding-top: 1px;padding-inline-start: 1px;padding-inline-end:5px;padding-bottom: 8px;">
+                                                                                    <span class="login1000-form-title p-b-100">
+                                                                                            <p style="text-align: left;font-size: 25px;font-family: 'Courier New';padding-left: 8px;padding-block-start: 1px;padding-top: -2px;"><strong>RESIDENCE INFO</strong></p>
+                                                                                 			<% if (student.residence_info.status){ %>
+                                                                                            <p style="text-align: left;font-size: 20px;font-family:'Courier New';padding-left: 8px;padding-top: -3px;">HALL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= student.residence_info.hall_id %></p>
+                                                                                            <p style="text-align: left;font-size: 20px;font-family:'Courier New';padding-left: 8px;padding-top: -3px;">BLOCK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= student.residence_info.block_id %></p>
+                                                                                            <p style="text-align: left;font-size: 20px;font-family:'Courier New';padding-left: 8px;padding-top: -3px;">ROOM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= student.residence_info.room_id %></p>
+																							<% }else{ %>
+																						  <p style="text-align: left;font-size: 20px;font-family:'Courier New';padding-left: 8px;padding-top: -3px;">HALL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UNREGISTERED.</p>
+                                                                                            <p style="text-align: left;font-family: 'Courier New';padding-left: 8px;padding-top: -3px;"><a href="/register-residence">REGISTER NOW!!</a> </p>
+																							<% } %>
+                                                                                        </span>
+                                                                                        </div>
+                                                                                        
+                
+
+					 <span class="login100-form-title p-b-48">
+					
+					</span> 
+<!-- 
+					<div class="wrap-input100 validate-input" data-validate = "Enter an ID">
+						<input class="input100" type="text" name="studentID">
+						<span class="focus-input100" data-placeholder="STUDENT ID"></span>
+					</div>
+					<br>
+					<br>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+						<input class="input100" type="password" name="pass">
+						<span class="focus-input100" data-placeholder="PASSWORD"></span>
+					</div> -->
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+
+					 <div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn">
+								LOGOUT
+							</button>
+						</div>
+					</div> 
+
+					<div class="text-center p-t-115">
+						<span class="txt1">
+							<!-- Don’t have an account? -->
+						</span>
+
+						<a class="txt2" href="#">
+							<!-- Sign Up -->
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
